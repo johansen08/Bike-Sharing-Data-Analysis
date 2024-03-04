@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("day.csv")
+df = pd.read_csv("main_data.csv")
 
 st.sidebar.header('Dashboard')
 pilihan = st.sidebar.selectbox(
