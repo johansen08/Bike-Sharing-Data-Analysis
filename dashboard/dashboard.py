@@ -1,8 +1,11 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
-df = pd.read_csv("main_data.csv")
+path = os.path.dirname(__file__)
+file = path+'/main_data.csv'
+df = pd.read_csv(file)
 
 st.sidebar.header('Dashboard')
 pilihan = st.sidebar.selectbox(
